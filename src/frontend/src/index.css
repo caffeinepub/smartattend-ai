@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+    /* White */
+    --background: 1 0 0;
+    --foreground: 0.202 0.012 254.4;
+    /* Cards */
+    --card: 1 0 0;
+    --card-foreground: 0.202 0.012 254.4;
+    --popover: 1 0 0;
+    --popover-foreground: 0.202 0.012 254.4;
+    /* Brand blue #2F6FED */
+    --primary: 0.512 0.196 258.1;
+    --primary-foreground: 1 0 0;
+    /* Light gray secondary */
+    --secondary: 0.962 0.008 240;
+    --secondary-foreground: 0.202 0.012 254.4;
+    --muted: 0.962 0.008 240;
+    --muted-foreground: 0.439 0.022 266.5;
+    /* Accent same as secondary */
+    --accent: 0.962 0.008 240;
+    --accent-foreground: 0.202 0.012 254.4;
+    /* Destructive red */
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 1 0 0;
+    --border: 0.919 0.007 254.8;
+    --input: 0.919 0.007 254.8;
+    --ring: 0.512 0.196 258.1;
+    /* Status colors */
+    --success: 0.696 0.196 145.8;
+    --success-foreground: 1 0 0;
+    --warning: 0.769 0.188 70.08;
+    --warning-foreground: 0.202 0.012 254.4;
+    /* Hero tint */
+    --hero-bg: 0.962 0.03 241;
+    --chart-1: 0.512 0.196 258.1;
+    --chart-2: 0.696 0.196 145.8;
+    --chart-3: 0.769 0.188 70.08;
+    --chart-4: 0.646 0.222 41.116;
+    --chart-5: 0.6 0.118 184.704;
+    --sidebar: 0.985 0 0;
+    --sidebar-foreground: 0.145 0 0;
+    --sidebar-primary: 0.512 0.196 258.1;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.97 0 0;
+    --sidebar-accent-foreground: 0.205 0 0;
+    --sidebar-border: 0.922 0 0;
+    --sidebar-ring: 0.708 0 0;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Inter", sans-serif;
+  }
+}
